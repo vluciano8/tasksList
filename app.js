@@ -99,11 +99,11 @@ function storeTaskInLocalStorage(task) {
 // remove task function
 function removeTask(e){
     if(e.target.parentElement.classList.contains('delete-item')) {
-        if(confirm('are you sure??')){
+  
             e.target.parentElement.parentElement.remove();
             // remove from Local Storage
             removeTaskFromLocalStorage(e.target.parentElement.parentElement);
-        }
+    
     
     }
 }
